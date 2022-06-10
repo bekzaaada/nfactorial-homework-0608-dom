@@ -9,7 +9,7 @@
     "initGit": "git init",
     "add": "git add .",
     "commit": "git commit -m 'changed'",
-    "push": "git push",
+    "push": "git push origin main -f",
     "pushToGit": "npm run initGit && npm run add && npm run commit && npm run push"
     
   },
