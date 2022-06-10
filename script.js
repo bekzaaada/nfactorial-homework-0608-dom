@@ -18,10 +18,10 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'assets/me.jpg',
-        name : 'Cry Baby',
-        artist : 'Melanie Martinez',
-        music : 'assets/American Avenue, Kalie Wolfe — Cry Baby (www.lightaudio.ru).mp3'
+        img : 'assets/hill.jpg',
+        name : 'Oceans',
+        artist : 'HillSong United',
+        music : 'assets/oceans.mp3'
     },
     {
         img : 'assets/lu.jpg',
@@ -34,6 +34,18 @@ const music_list = [
         name : 'Men seni suiemyn',
         artist : 'Son Pascal',
         music : 'assets/son-pascal-men-sen-sjemn_(muzzona.kz).mp3'
+    },
+    {
+        img : 'assets/piano.jpg',
+        name : 'Lacrimosa',
+        artist : 'Mozart',
+        music : 'assets/Dafydd Bullock — Mozart Requiem (Lacrimosa) (www.lightaudio.ru).mp3'
+    },
+    {
+        img : 'assets/me.jpg',
+        name : 'Cry Baby',
+        artist : 'Melanie Martinez',
+        music : 'assets/American Avenue, Kalie Wolfe — Cry Baby (www.lightaudio.ru).mp3'
     },
 ];
 
@@ -118,3 +130,15 @@ function setUpdate(){
         total_duration.textContent = durationMinutes + ":" + durationMinutes;
     }
 }
+
+let videoBtn = document.querySelectorAll('.vid-btn');
+videoBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src;
+    });
+});
+
+
