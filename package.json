@@ -1,0 +1,24 @@
+{
+  "name": "homework3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pushToGit": "git init",
+    "add": "git add .",
+    "commit": "git commit -m 'heey'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JS@github.com/bekzaaada/nfactorial-homework-0806-htmlcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bekzaaada/nfactorial-homework-0806-htmlcss./issues"
+  },
+  "homepage": "https://github.com/bekzaaada/nfactorial-homework-0806-htmlcss.#readme"
+}

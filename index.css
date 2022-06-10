@@ -9,7 +9,7 @@ body{
     justify-content: center;
 }
 .wrapper{
-    background-color: rgba(10, 4, 4, 0.3) ;
+    /* background-color: rgba(10, 4, 4, 0.3) ; */
     border: 2px solid rgba(197, 9, 9, 0.3) 0px 19px 38px;
     padding: 30px;
     border-radius: 20px;
@@ -141,5 +141,27 @@ i.fa-step-backward{
     margin-bottom: 60px;
 }
 .controls .vid-btn.active{
-    background:  #3d4c6b;  
+    background:  rgba(10, 4, 4, 0.3);  
+}
+.modes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.dark-mode, .light-mode, .alert{
+    padding: 25px;
+    margin: 2px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.dark-mode{
+    background-color: rgba(10, 4, 4, 0.3);
+}
+.light-mode{
+    background-color: rgba(201, 184, 184, 0.3);
+}
+.btn{
+    background-color: rgba(7, 6, 6, 0.3);
+    width: 80px;
+    color: white;
 }

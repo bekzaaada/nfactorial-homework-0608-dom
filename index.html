@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body >
    <div class="player">
         <div class="video-container">
-            <video src="assets/vid-4.mp4" id="video-slider" loop autoplay muted></video>
+            <video src="assets/vid-8.mp4" id="video-slider" loop autoplay muted></video>
         </div>
        <div class="wrapper">
            <div class="details">
@@ -45,12 +45,18 @@
                     <i class="fa fa-step-forward fa-2x"></i>
                 </div>
            </div>
+           <div class="modes">
+            <div class="dark-mode" onclick="setLightTheme()">
+            </div>
+            <div class="light-mode" onclick="setDarkTheme()">
+            </div>
+           </div>
+            <button class="btn" onclick="checkCookie()">Cookie</button>
        </div>
 
        <div class="controls">
-        <span class="vid-btn active" data-src="assets/vid-4.mp4"></span>
-        <span class="vid-btn" data-src="assets/vid-8.mp4"></span>
-        <span class="vid-btn" data-src="assets/vid-3.mp4"></span>
+        <span class="vid-btn active" data-src="assets/vid-8.mp4"></span>
+        <span class="vid-btn" data-src="assets/vid-4.mp4"></span>
         <span class="vid-btn" data-src="assets/vid-5.mp4"></span>
         <span class="vid-btn" data-src="assets/vid-6.mp4"></span>
         <span class="vid-btn" data-src="assets/vid-7.mp4"></span>

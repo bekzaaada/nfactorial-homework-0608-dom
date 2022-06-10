@@ -1,3 +1,4 @@
+
 let track_art = document.querySelector('.track-art');
 let track_name = document.querySelector('.track-name');
 let track_artist = document.querySelector('.track-artist');
@@ -141,4 +142,67 @@ videoBtn.forEach(btn =>{
     });
 });
 
+// function getValue(){
+//     const theme = localStorage.getItem("theme");
+//     const modeValue = document.getElementsByClassName(".wrapper");
+//     modeValue.className = 
+// }
 
+function setDarkTheme(){
+    localStorage.setItem("theme", "dark");
+    const modeValue = document.getElementsByClassName("wrapper")[0];
+    modeValue.style.backgroundColor = "rgba(10, 4, 4, 0.3)";
+}
+function setLightTheme(){
+    localStorage.setItem("theme", "light");
+    const modeValue = document.getElementsByClassName("wrapper")[0];
+    modeValue.style.backgroundColor = "rgba(201, 184, 184, 0.3)";
+
+}
+
+function setCookie(cname, cvalue, exdays){
+    let date = new Date("June 10, 2022");
+    let expires = "";
+    exdays = 6
+    let expireDate = new Date();
+    expireDate.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    expires = "expires="+ expireDate.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+// function getCookie(){
+//     alert(document.cookie);
+// }
+
+// function setCookie(cname, cvalue, exdays) {
+//     const d = new Date();
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//     let expires = "expires="+d.toUTCString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+//   }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
