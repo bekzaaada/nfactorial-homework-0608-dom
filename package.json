@@ -6,9 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pushToGit": "git init",
+    "initGit": "git init",
     "add": "git add .",
-    "commit": "git commit -m 'heey'"
+    "commit": "git commit -m 'hello'",
+    "pushToGit": "npm run initGit && npm run add && npm run commit"
+    
   },
   "repository": {
     "type": "git",
