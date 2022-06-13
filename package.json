@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "initGit": "git init",
     "add": "git add .",
-    "commit": "git commit -m 'changed'",
+    "commit": "git commit -m 'changed2'",
     "push": "git push origin main -f",
     "pushToGit": "npm run initGit && npm run add && npm run commit && npm run push"
     
