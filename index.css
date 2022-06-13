@@ -9,7 +9,6 @@ body{
     justify-content: center;
 }
 .wrapper{
-    /* background-color: rgba(10, 4, 4, 0.3) ; */
     border: 2px solid rgba(197, 9, 9, 0.3) 0px 19px 38px;
     padding: 30px;
     border-radius: 20px;
@@ -71,6 +70,10 @@ body{
 .next-track:hover{
     opacity: 1.0;
 }
+.bar{
+    background-color: transparent;
+}
+
 .slider_container{
     display: flex;
     justify-content: center;
@@ -78,24 +81,10 @@ body{
 }
 .seek_slider,
 .volume_slider{
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     height: 5px;
     background: #83a9ff;
-    -webkit-transition: .2s;
     transition: opacity .2s;
-}
-.seek_slider::-webkit-slider-thumb,
-.volume_slider::-webkit-slider-thumb{
-   
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 3px solid #3774ff;
-    cursor: pointer;
-    border-radius: 100%;
 }
 .seek_slider:hover,
 .volume_slider:hover{
@@ -115,17 +104,14 @@ i.fa-volume-down,
 i.fa-volume-up{
     padding: 10px;
 }
-i,
-i.fa-play-circle,
-i.fa-pause-circle,
-i.fa-step-forward,
-i.fa-step-backward{
+i{
     cursor: pointer;
 }
 
 
 .controls{
     position: absolute;
+    
     bottom: 0;  
     background-color: transparent;
     display: flex;

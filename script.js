@@ -1,4 +1,3 @@
-
 let track_art = document.querySelector('.track-art');
 let track_name = document.querySelector('.track-name');
 let track_artist = document.querySelector('.track-artist');
@@ -11,6 +10,8 @@ let seek_slider = document.querySelector('.seek_slider');
 let volume_slider = document.querySelector('.volume_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
+
+ 
 let curr_track = document.createElement('audio');
 
 let track_index = 0;
@@ -141,12 +142,6 @@ videoBtn.forEach(btn =>{
         document.querySelector('#video-slider').src = src;
     });
 });
-
-// function getValue(){
-//     const theme = localStorage.getItem("theme");
-//     const modeValue = document.getElementsByClassName(".wrapper");
-//     modeValue.className = 
-// }
 
 function setDarkTheme(){
     localStorage.setItem("theme", "dark");
